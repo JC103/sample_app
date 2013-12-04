@@ -1,10 +1,24 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+#kirino { padding: -20px;
+          margin: -20px;
+}
+.hero-unit { padding: 30px;}
+
+.btn {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
 
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
 
-@mixin box_sizing {
+@mixin box_sizing {padding: 5px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -42,7 +56,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 3em;
+  text-transform: uppercase;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -66,12 +82,13 @@ p {
 /* header */
 
 #logo {
+font-family: 'Yanone Kaffeesatz', sans-serif;
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 1.9em;
   color: white;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: 2px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
